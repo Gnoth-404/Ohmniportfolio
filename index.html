@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Ohmni Health Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api.ohmnilabs.com/ohmni-api/Ohmni-standalone.js"></script>
+
+
+
+  </head>
+<body>
+  
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Ohmni Health</a></div>
+      <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Technology</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+<!-- Home Section Start -->
+ <section class="home" id="home">
+   <div class="home-content">
+     <div class="text">
+       <div class="text-one">Hello,</div>
+       <div class="text-two">We're INGENIEUR BÄREN </div>
+       <div class="text-three" >Project: Fusion of thermal and visible images to provide diagnosis on COVID-19 symptoms</div>
+     </div>
+     <div class="button" onclick="hallo()">
+       <button >Hallo</button>
+     </div>
+   </div>
+ </section>
+
+<!-- About Section Start -->
+<section class="about" id="about">
+  <div class="content">
+    <div class="title"><span>Project Goal</span></div>
+  <div class="about-details">
+    <div class="left">
+      <img src="images/CAD_4.png" alt="">
+    </div>
+    <div class="right">
+      <div class="topic">Designing Is our Passion</div>
+      <p>To provide a local-hosted webpage, accessible by OhmniRobot via its available tools, displaying health information (temperature and SpO2 ratio) of participants.</p>
+      <div class="button onclick="introduction()">
+        <button onclick="introduction()">Click me </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- My Skill Section Start -->
+<!-- Section Tag and Other Div will same where we need to put same CSS -->
+<section class="skills" id="skills">
+ <div class="content">
+   <div class="title"><span>Technology</span></div>
+   <div class="skills-details">
+     <div class="text">
+       <div class="topic">Our project is based on the following technologies</div>
+        <dl>
+          <dt class="topic">Healthcare Module:</dt>
+          <dd>- Capture users’ HeartBeat and SpO2 data </dd>
+          <dd>- Come with a self-designed 3D printed mount displaying instructions</dd>
+          <dt class="topic">Web server: </dt>
+          <dd>- Able to display established messages</dd>
+          <dd>- User-friendly, easy to use</dd>  
+          <dd>- Designed with accessible icons for further development</dd>  
+        </dl>
+      
+       <div class="experience">
+         <div class="num">8</div>
+         <div class="exp">Months Of <br> Work</div>
+       </div>
+     </div>
+     <div class="boxes">
+       <div class="box">
+         <div class="topic">Docker</div>
+         <img src="https://img.icons8.com/color/96/null/docker.png"/>
+       </div>
+       <div class="box">
+         <div class="topic">ROS</div>
+         <img src="https://img.icons8.com/color/96/null/robot--v1.png"/>         
+       </div>
+       <div class="box">
+         <div class="topic">Opencv</div>
+         <img src="https://img.icons8.com/color/96/null/opencv.png"/>
+       </div>
+       <div class="box">
+         <div class="topic">Nodejs</div>
+         <img src="https://img.icons8.com/color/96/null/nodejs.png"/>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+<!-- My Services Section Start -->
+ <section class="services" id="services">
+   <div class="content">
+     <div class="title"><span>My Services</span></div>
+     <div class="boxes">
+       <div class="box">
+         <div class="icon" onclick="moveup()">
+           <i class="fas fa-arrow-alt-circle-up"></i>
+       </div>
+       <div class="topic" >Move up</div>
+     </div>
+       <div class="box">
+         <div class="icon" onclick="moveback()">
+           <i class="fas fa-arrow-alt-circle-down"></i>
+       </div>
+       <div class="topic" >Move back</div>
+       
+     </div>
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-flag-checkered" onclick="nod()"></i>
+       </div>
+       <div class="topic" >Nod</div>
+     </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fab fa-android" onclick="rotate()"></i>
+        </div>
+        <div class="topic">Rotate</div>
+     </div>
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-handshake" onclick="deutschSpeech()"></i>
+       </div>
+       <div class="topic" >German</div>
+     </div>
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-tablet-alt" onclick="chineseSpeech()"></i>
+       </div>
+       <div class="topic">Chinese</div>
+     </div>
+   </div>
+   </div>
+ </section>
+
+<!-- Contact Me section Start -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <div class="text">
+      <div class="topic">Feel free to contact us</div>
+      
+      <a href="https://ohmnilabs.com/">
+        <img src="images/vgu_logo.png" width="150" height="70"/>
+     </a>
+     <a href="https://vgu.edu.vn/vi/home">
+      <img src="images/Ohmnilabs.png" width="150" height="90"/>
+    </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">Tien Anh</a> | &#169; 2022 All Rights Reserved</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  console.log("Ohmni here:", Ohmni)
+  // Convenience helpers
+  function wait(cb, ms) {
+    setTimeout(function(){ cb(); }, ms);
+  }
+  
+  var lhue = 0;
+  
+  // Set up the beat here
+  function upbeat() {
+  
+    Ohmni.setNeckPosition(550, 140);
+    wait(function(){
+      downbeat();
+    }, 1000);
+  
+  }
+  
+  // Set up the beat here
+  function downbeat() {
+  
+    // Change light on every downbeat
+    Ohmni.setLightColor(lhue, 230, 100);
+    lhue += 20;
+    if (lhue > 255) lhue -= 256;
+  
+    // Perform upbeat next
+    Ohmni.setNeckPosition(350, 80);
+    wait(function(){
+      upbeat();
+    }, 500);
+  
+  }
+  var player = null;
+  function onYouTubePlayerAPIReady() {
+    console.log("Player ready!");
+    player = new YT.Player('player', {
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+  
+  //function onPlayerReady(event) {
+  //  console.log("Player is ready.");
+  
+   // Ohmni.setSpeechLanguage("zh-TW");
+   // Ohmni.say("你好");
+  
+  //  Ohmni.setSpeechLanguage("en-US");
+  //  Ohmni.say("Meo ready!", function(){
+  
+  //    Ohmni.setLightColor(30,230,100);
+  //  });
+  
+  //}
+  function hallo() {
+    Ohmni.setSpeechLanguage("de-DE");
+    Ohmni.say("Hallo zusammen");
+  }
+  function deutschSpeech() {
+    Ohmni.setSpeechLanguage("de-DE");
+    Ohmni.say("Guten Morgen! Willkommen zur Einweihungsfeier des neuen Campus der VGU", function(){
+      Ohmni.setLightColor(30,230,100);
+    });
+  }
+  function chineseSpeech() {
+    Ohmni.setSpeechLanguage("zh-TW");
+    Ohmni.say("您好，欢迎来到 VGU");
+  }
+  function introduction() {
+    Ohmni.setSpeechLanguage("en-US");
+    Ohmni.say("The project is conducted as part of VGU participation in the “K-O Hackathon II - Challenge 03: Learning Activities with Ohmni Robot” held by Kambria and OhmniLabs. The objective of this contest is to create a proof-of-concept robotics solution on top of the Ohmni Developer Platform, Acknowledging the concerns of Covid 19 pandemic, we decided to develop a module, mounted onto the Ohmni Robot, to retrieve users’ temperature andSpO2 ratio, using computer vision and Robotic Operating System (ROS), in order to classify participants who bear a chance of being infected with COVID-19.")
+  }
+  function onPlayerStateChange(event) {
+    console.log("Player state change.");
+  }
+  
+  // Run a phase sequence
+  function run_phases(phasearr, idx) {
+  
+    // Check if we have something to do
+    if (idx >= phasearr.length) return;
+  
+    // Get and run the function with a callback to trigger next phase
+    var self = this;
+    var fn = phasearr[idx];
+    fn(function(){
+      setTimeout(function(){
+        self.run_phases(phasearr, idx+1);
+      }, 1);
+    });
+  
+  };
+  
+  // Wait and then trigger callback
+  function wait(cb, time) {
+    setTimeout(function() {
+      cb();
+    }, time);
+  }
+  
+  function moveback() {
+    var phases = [
+      function(cb) {
+        Ohmni.move(-300, 300, 2000);
+        Ohmni.say("Move back");
+        wait(cb, 2000);
+      },
+    ];
+    run_phases(phases, 0);
+  }
+  function moveup() {
+    var phases = [
+      function(cb) {
+        Ohmni.move(300, -300, 2000);
+        Ohmni.say("Move up");
+        wait(cb, 2000);
+      },
+    ];
+    run_phases(phases, 0);
+  }
+  function rotate() {
+    var phases = [
+      function(cb) {
+        Ohmni.move(-200, -200, 5000);
+        wait(cb, 2000);
+      },
+    ];
+    run_phases(phases, 0);
+  }
+
+  
+  function praise() {
+    Ohmni.say("Meo is cool!", function(){
+      Ohmni.say("Praise me!");
+    });
+  }
+  
+  function nod() {
+    var phases = [
+      function(cb) {
+        window.Ohmni.say("Nodding.");
+        wait(cb, 200);
+      },
+      function(cb) {
+        Ohmni.setNeckTorqueEnabled(1);
+        wait(cb, 200);
+      },
+      function(cb) {
+        Ohmni.setNeckPosition(600, 100);
+        wait(cb, 200);
+      },
+      function(cb) {
+        Ohmni.setNeckPosition(250, 100);
+        wait(cb, 200);
+      },
+      function(cb) {
+        Ohmni.setNeckTorqueEnabled(0);
+        wait(cb, 1);
+      },
+    ];
+    run_phases(phases, 0);
+  }
+  </script>
+</body>
+</html>
